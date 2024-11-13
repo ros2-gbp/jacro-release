@@ -1,0 +1,12 @@
+Source: ros-rolling-jacro
+Section: misc
+Priority: optional
+Maintainer: Jafar Uruc <jafar.uruc@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), pre-commit <!nocheck>, ros-rolling-ament-cmake, ros-rolling-ament-cmake-pytest <!nocheck>, ros-rolling-std-msgs <!nocheck>, ros-rolling-ros-workspace
+Homepage: https://github.com/JafarAbdi/jacro
+Standards-Version: 3.9.2
+
+Package: ros-rolling-jacro
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3-jinja2, python3-rich, ros-rolling-ament-index-python, ros-rolling-ros-workspace
+Description: TODO: Project Short Description

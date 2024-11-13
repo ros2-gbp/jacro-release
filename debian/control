@@ -1,0 +1,12 @@
+Source: ros-jazzy-jacro
+Section: misc
+Priority: optional
+Maintainer: Jafar Uruc <jafar.uruc@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), pre-commit <!nocheck>, ros-jazzy-ament-cmake, ros-jazzy-ament-cmake-pytest <!nocheck>, ros-jazzy-std-msgs <!nocheck>, ros-jazzy-ros-workspace
+Homepage: https://github.com/JafarAbdi/jacro
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-jacro
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3-jinja2, python3-rich, ros-jazzy-ament-index-python, ros-jazzy-ros-workspace
+Description: TODO: Project Short Description

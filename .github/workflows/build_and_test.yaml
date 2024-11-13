@@ -1,0 +1,30 @@
+name: Build and Test
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  industrial_ci:
+    strategy:
+      fail-fast: false
+      matrix:
+        env:
+          # See https://docs.ros.org/en/independent/api/rosdep/html/pip_and_pep_668.html
+          - ROS_DISTRO: jazzy
+            PIP_BREAK_SYSTEM_PACKAGES: True
+          - ROS_DISTRO: humble
+          - ROS_DISTRO: rolling
+            PIP_BREAK_SYSTEM_PACKAGES: True
+
+    env:
+      ROS_REPO: main
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: 'ros-industrial/industrial_ci@master'
+        env: ${{ matrix.env }}

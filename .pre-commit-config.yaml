@@ -1,0 +1,58 @@
+default_language_version:
+  ruby: 2.7.2
+
+repos:
+  # Standard hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-ast
+      - id: check-builtin-literals
+      - id: check-byte-order-marker
+      - id: check-case-conflict
+      - id: check-docstring-first
+      - id: check-executables-have-shebangs
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-toml
+      - id: check-vcs-permalinks
+      - id: check-xml
+      - id: check-yaml
+        args: ['--allow-multiple-documents']
+      - id: debug-statements
+      - id: destroyed-symlinks
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: fix-byte-order-marker
+      - id: forbid-new-submodules
+      - id: mixed-line-ending
+      - id: name-tests-test
+      - id: pretty-format-json
+        args: ['--autofix']
+      - id: requirements-txt-fixer
+      - id: sort-simple-yaml
+      - id: trailing-whitespace
+  # Python
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.7.2
+    hooks:
+      - id: ruff
+        args: ['--output-format=full', '--fix', '--config', 'pyproject.toml']
+      - id: ruff-format
+  # Markdown
+  - repo: https://github.com/markdownlint/markdownlint
+    rev: v0.12.0
+    hooks:
+    - id: markdownlint
+      args: ['--rules', '~MD013']
+  # Github Actions
+  - repo: https://github.com/s-weigand/pre-commit_mirrors-actionlint
+    rev: v1.6.24
+    hooks:
+      - id: actionlint
+  - repo: https://github.com/crate-ci/typos
+    rev: v1.23.6
+    hooks:
+      - id: typos

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>jacro</name>
+  <version>0.2.0</version>
+  <description>TODO: Project Short Description</description>
+  <maintainer email="jafar.uruc@gmail.com">Jafar Uruc</maintainer>
+  <author email="jafar.uruc@gmail.com">Jafar Uruc</author>
+  <license>BSD</license>
+  <url type="website">https://github.com/JafarAbdi/jacro</url>
+  <url type="bugtracker">https://github.com/JafarAbdi/jacro/issues</url>
+  <url type="repository">https://github.com/JafarAbdi/jacro/</url>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>python3-rich</exec_depend>
+  <exec_depend>python3-jinja2</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <test_depend>ament_cmake_pytest</test_depend>
+  <test_depend>python3-pre-commit</test_depend>
+  <test_depend>std_msgs</test_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

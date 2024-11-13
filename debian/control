@@ -1,0 +1,12 @@
+Source: ros-humble-jacro
+Section: misc
+Priority: optional
+Maintainer: Jafar Uruc <jafar.uruc@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), pre-commit <!nocheck>, ros-humble-ament-cmake, ros-humble-ament-cmake-pytest <!nocheck>, ros-humble-std-msgs <!nocheck>, ros-humble-ros-workspace
+Homepage: https://github.com/JafarAbdi/jacro
+Standards-Version: 3.9.2
+
+Package: ros-humble-jacro
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3-jinja2, python3-rich, ros-humble-ament-index-python, ros-humble-ros-workspace
+Description: TODO: Project Short Description

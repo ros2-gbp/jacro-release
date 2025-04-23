@@ -1,0 +1,12 @@
+Source: ros-kilted-jacro
+Section: misc
+Priority: optional
+Maintainer: Jafar Uruc <jafar.uruc@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), pre-commit <!nocheck>, ros-kilted-ament-cmake, ros-kilted-ament-cmake-pytest <!nocheck>, ros-kilted-std-msgs <!nocheck>, ros-kilted-ros-workspace
+Homepage: https://github.com/JafarAbdi/jacro
+Standards-Version: 3.9.2
+
+Package: ros-kilted-jacro
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3-jinja2, python3-rich, ros-kilted-ament-index-python, ros-kilted-ros-workspace
+Description: TODO: Project Short Description

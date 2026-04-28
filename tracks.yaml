@@ -104,4 +104,5 @@ tracks:
     ros_distro: rolling
     vcs_type: git
     vcs_uri: https://github.com/JafarAbdi/jacro.git
-    version: :{auto}
+    version: 0.2.0
+    version_saved: :{auto}

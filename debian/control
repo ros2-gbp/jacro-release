@@ -1,0 +1,12 @@
+Source: ros-lyrical-jacro
+Section: misc
+Priority: optional
+Maintainer: Jafar Uruc <jafar.uruc@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), pre-commit <!nocheck>, ros-lyrical-ament-cmake, ros-lyrical-ament-cmake-pytest <!nocheck>, ros-lyrical-std-msgs <!nocheck>, ros-lyrical-ros-workspace
+Homepage: https://github.com/JafarAbdi/jacro
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-jacro
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3-jinja2, python3-rich, ros-lyrical-ament-index-python, ros-lyrical-ros-workspace
+Description: TODO: Project Short Description
